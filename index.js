@@ -1,7 +1,10 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  //Iterate over the characters in the word
   for(let i = 0; i < word.length; i++){
+    //Iterate over the characters in reverse order
     for (let j = word.length-1; j >= 0; j--){
+    // Check if the characters at the current positions match
       return word[i] === word[j] ? true : false;
     }
   }
